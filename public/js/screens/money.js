@@ -159,8 +159,9 @@ export default {
         const d = plan.debts[calcDebt]
         const interestFloor = Math.ceil((d.amount * d.interestRate) / 1200) + 1 // must beat monthly interest
         // Range: from the smaller of (minimum payment, interest-only) up to paying it all at once
-        const lo = Math.max(50, Math.min(d.minMonthlyPayment || interestFloor, interestFloor, d.amount))
-        slider.step = d.amount > 20000 ? 100 : 50
+        const step = d.amount > 20000 ? 100 : 50
+        const lo = Math.max(step, Math.floor(Math.min(d.minMonthlyPayment || interestFloor, interestFloor, d.amount) / step) * step)
+        slider.step = step
         slider.min = lo
         slider.max = Math.max(d.amount, lo + 100)
         slider.value = Math.max(d.minMonthlyPayment, lo)
