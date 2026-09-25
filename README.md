@@ -8,6 +8,7 @@ an emergency fund, goals, investment *education*, a dashboard with a health scor
 
 - **Stack:** plain HTML + CSS + ES-module JavaScript. **No build step, no framework, no backend.**
 - **Data:** stays in the user's browser (`localStorage`, key `shonchoy:v1`). Nothing is sent to a server.
+- **GitHub:** https://github.com/RJahan004/shonchoy
 - **Hosting:** any static host (Vercel, Netlify, Cloudflare Pages). `public/` is the site.
 
 ## Features
