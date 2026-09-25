@@ -1,0 +1,98 @@
+/* =====================================================================
+ * $honchoy DESIGN TOKENS
+ * ---------------------------------------------------------------------
+ * The ONLY place raw colours, fonts, sizes, radii and shadows are defined.
+ * Components (components.css) and teammates' screens should use these
+ * variables and never hard-code values.
+ *
+ * Palette: blush + white surfaces, rose-pink primary, deep plum text.
+ * All text/background pairs below meet WCAG AA (4.5:1) for body text.
+ * ===================================================================== */
+:root {
+  /* ---- Colour: brand ---- */
+  --rose-50:  #fff5f8;   /* page background (blush) */
+  --rose-100: #ffe4ec;   /* soft fills, chips */
+  --rose-200: #fecddb;   /* borders on pink, progress track */
+  --rose-300: #fba4bf;
+  --rose-400: #f47a9f;
+  --rose-500: #e84f82;   /* PRIMARY */
+  --rose-600: #cf3a6c;   /* primary hover / text-on-white pink (AA) */
+  --rose-700: #a82a57;
+
+  --plum-900: #3d1a33;   /* main text (deep plum, never black) */
+  --plum-700: #5e3252;   /* secondary text */
+  --plum-500: #8a6180;   /* muted text / captions (AA on white) */
+  --plum-200: #e7d8e3;   /* hairlines */
+  --plum-100: #f5eef3;
+
+  --white: #ffffff;
+
+  /* ---- Colour: semantic ---- */
+  --color-bg:        var(--rose-50);
+  --color-surface:   var(--white);
+  --color-surface-2: #fffafc;
+  --color-text:      var(--plum-900);
+  --color-text-2:    var(--plum-700);
+  --color-muted:     var(--plum-500);
+  --color-border:    #f3dbe5;
+  --color-primary:   var(--rose-500);
+  --color-primary-strong: var(--rose-600);
+  --color-primary-soft:   var(--rose-100);
+  --color-on-primary: var(--white);
+
+  --color-success: #2f8f6b;  --color-success-soft: #e3f5ee;
+  --color-warning: #b86a00;  --color-warning-soft: #fff3de;
+  --color-danger:  #c0344d;  --color-danger-soft:  #fde7eb;
+  --color-info:    #6a4bbf;  --color-info-soft:    #efeafd;
+
+  /* Chart / split colours (emergency · goals · flexible) */
+  --color-emergency: var(--rose-500);
+  --color-goals:     #9b5de5;
+  --color-flexible:  #f4a261;
+
+  --gradient-brand: linear-gradient(135deg, #ff9ebb 0%, #e84f82 55%, #b8336a 100%);
+  --gradient-soft:  linear-gradient(160deg, #fff 0%, #ffeef4 100%);
+
+  /* ---- Typography ---- */
+  /* Hind Siliguri covers Latin + Bangla script; Baloo Da 2 for friendly headings. */
+  --font-body: 'Hind Siliguri', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Baloo Da 2', 'Hind Siliguri', system-ui, sans-serif;
+
+  --text-xs: 0.78rem;   /* 12.5px captions */
+  --text-sm: 0.875rem;  /* 14px */
+  --text-md: 1rem;      /* 16px body (never smaller on inputs: avoids iOS zoom) */
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --leading-tight: 1.2;
+  --leading-body: 1.55;  /* Bangla glyphs need generous line height */
+  --weight-regular: 400; --weight-medium: 500; --weight-semibold: 600; --weight-bold: 700;
+
+  /* ---- Spacing (4px base) ---- */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-10: 40px; --space-12: 48px;
+
+  /* ---- Radius ---- */
+  --radius-sm: 8px; --radius-md: 12px; --radius-lg: 18px; --radius-xl: 24px; --radius-pill: 999px;
+
+  /* ---- Elevation (plum-tinted, never grey/black) ---- */
+  --shadow-sm: 0 1px 2px rgba(61, 26, 51, 0.06);
+  --shadow-md: 0 4px 16px rgba(61, 26, 51, 0.07), 0 1px 3px rgba(61, 26, 51, 0.05);
+  --shadow-lg: 0 12px 32px rgba(168, 42, 87, 0.14);
+  --focus-ring: 0 0 0 3px rgba(232, 79, 130, 0.35);
+
+  /* ---- Layout ---- */
+  --container: 1080px;
+  --container-narrow: 560px;
+  --nav-height: 68px;
+  --tap-min: 44px;        /* minimum touch target */
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --dur-fast: 120ms; --dur: 220ms; --dur-slow: 500ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur: 0ms; --dur-slow: 0ms; }
+}

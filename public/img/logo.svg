@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="$honchoy">
+  <!-- $honchoy mark: coin with a scalloped petal edge, pink gradient, a stylised "$" / seedling -->
+  <defs>
+    <linearGradient id="sg-edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb3c9"/><stop offset=".55" stop-color="#e84f82"/><stop offset="1" stop-color="#b8336a"/>
+    </linearGradient>
+    <radialGradient id="sg-face" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#fff"/><stop offset=".6" stop-color="#ffe4ec"/><stop offset="1" stop-color="#fbb9cd"/>
+    </radialGradient>
+  </defs>
+  <path fill="url(#sg-edge)" d="M50.00 6.00 A10.97 10.97 0 0 1 69.09 10.36 A10.97 10.97 0 0 1 84.40 22.57 A10.97 10.97 0 0 1 92.90 40.21 A10.97 10.97 0 0 1 92.90 59.79 A10.97 10.97 0 0 1 84.40 77.43 A10.97 10.97 0 0 1 69.09 89.64 A10.97 10.97 0 0 1 50.00 94.00 A10.97 10.97 0 0 1 30.91 89.64 A10.97 10.97 0 0 1 15.60 77.43 A10.97 10.97 0 0 1 7.10 59.79 A10.97 10.97 0 0 1 7.10 40.21 A10.97 10.97 0 0 1 15.60 22.57 A10.97 10.97 0 0 1 30.91 10.36 A10.97 10.97 0 0 1 50.00 6.00Z"/>
+  <circle cx="50" cy="50" r="33" fill="url(#sg-face)"/>
+  <circle cx="50" cy="50" r="28.5" fill="none" stroke="#e84f82" stroke-opacity=".35" stroke-width="1.2" stroke-dasharray="2 3"/>
+  <!-- S-curve stem that sprouts a leaf: "savings that grow" -->
+  <path d="M59 38c-2.5-3.5-6-5-10-5-5 0-8.5 2.8-8.5 6.6 0 8.4 19 5.6 19 14.6 0 4.2-4 7.3-9.5 7.3-4.6 0-8.3-1.8-10.6-5.2" fill="none" stroke="#a82a57" stroke-width="5" stroke-linecap="round"/>
+  <path d="M50 27v-6" stroke="#a82a57" stroke-width="4" stroke-linecap="round"/>
+  <path d="M50 22c3-5 8-6.5 12-5.5-1 4.5-5.5 7.5-12 5.5z" fill="#e84f82"/>
+  <path d="M50 67v6" stroke="#a82a57" stroke-width="4" stroke-linecap="round"/>
+</svg>
