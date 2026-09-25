@@ -21,7 +21,7 @@ Point at the logo: *"A coin with a petal edge: savings that grow."*
 - Add **Rent 6,000 (Fixed)**, then toggle **Variable** → **Food 3,000**.
 - Add a debt: **Microloan, 30,000, 45%, 3,000/month**.
   > "Two warnings: the rate is unusually high for an MFI, and we show how much of income goes to debt: under 30% is fine, above 40% is risky."
-- Drag the **payoff slider** to ৳6,000 → *"Debt-free in 6 months instead of 13, saving almost ৳2,900 in interest."*
+- Drag the **payoff slider** to ৳6,000 → *"Debt-free in 6 months instead of 13, saving about ৳3,000 in interest."*
 
 ### 2:15–3:00 · Plan (the engine)
 > "Now $honchoy builds the monthly plan by itself."
